@@ -22,14 +22,14 @@ void loop (void* args)
 	
 	//for (int i = id; i < N - 1; i += inc)
 	//{
-		for (int j = 0; j < inc; j++)//N - 1; j++)
+	for (int j = 0; j < inc; j++)//N - 1; j++)
+	{
+		for (int k = 0; k < inc; k++)// N - 1; k++)
 		{
-			for (int k = 0; k < inc; k++)// N - 1; k++)
-			{
-				C[id-1/*i*/][j] = C[id-1/*i*/][j] + A[id-1/*i*/][k] * B[k][j];
-				//printf ("%d \n", C[id-1][j]);
-			}
+			C[id-1/*i*/][j] = C[id-1/*i*/][j] + A[id-1/*i*/][k] * B[k][j];
+			//printf ("%d \n", C[id-1][j]);
 		}
+	}
 	//}
 }
 
